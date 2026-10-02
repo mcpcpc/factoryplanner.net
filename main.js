@@ -74,9 +74,9 @@
   var machineEls = SIZE.map(function (s, i) {
     var g = el("g", { class: "machine", tabindex: 0, role: "button", "aria-label": LABELS[i] + ", machine " + (i + 1) + " of 6. Use arrow keys to move." });
     g.appendChild(el("rect", { class: "hit", fill: "transparent", width: s[0] + 16, height: s[1] + 16 }));
-    g.appendChild(el("rect", { class: "body", rx: 7, width: s[0], height: s[1] }));
+    g.appendChild(el("rect", { class: "body", rx: 8, width: s[0], height: s[1] }));
     var t = el("text", { "text-anchor": "middle", dy: "0.35em" }); t.textContent = LABELS[i]; g.appendChild(t);
-    g.appendChild(el("rect", { class: "ring", rx: 10, width: s[0] + 16, height: s[1] + 16 }));
+    g.appendChild(el("rect", { class: "ring", rx: 11, width: s[0] + 16, height: s[1] + 16 }));
     machineG.appendChild(g);
     g.addEventListener("pointerdown", function (e) { startDrag(i, e); });
     g.addEventListener("keydown", function (e) { nudge(i, e); });
