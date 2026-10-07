@@ -3,10 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Factory Planner — Plan better factory layouts</title>
+<title>Factory Planner — Free factory layout planning software</title>
 <meta name="description" content="Free, browser-based factory layout planning. Map material flow, optimise equipment placement, and export drawings ready to build from.">
 <link rel="canonical" href="https://factoryplanner.net/">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
 
 <meta property="og:type" content="website">
@@ -23,19 +25,41 @@
 <meta name="twitter:title" content="Factory Planner">
 <meta name="twitter:description" content="Free, browser-based factory layout planning.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
+<link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <script src="main.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://factoryplanner.net/#website",
+      "name": "Factory Planner",
+      "url": "https://factoryplanner.net/"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Factory Planner",
+      "url": "https://factoryplanner.net/",
+      "description": "Free, browser-based factory layout planning. Map material flow, optimise equipment placement, and export drawings as SVG, PNG or DXF.",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web browser",
+      "image": "https://factoryplanner.net/og-image.png",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#2b59c3"/><rect x="30" y="30" width="18" height="18" rx="3" fill="#fff"/><rect x="52" y="52" width="18" height="18" rx="3" fill="#9fb8f2"/></svg></template>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="brand" href="#">
+    <a class="brand" href="/">
       <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#2b59c3"/><rect x="4.5" y="4.5" width="7" height="7" rx="1.5" fill="#fff"/><rect x="12.5" y="12.5" width="7" height="7" rx="1.5" fill="#9fb8f2"/></svg>
       <span>Factory Planner</span>
     </a>
@@ -67,6 +91,7 @@
   <section class="hero">
     <div class="wrap hero-inner">
       <div class="hero-copy">
+        <span class="eyebrow">Free factory layout planner</span>
         <h1>Plan better factory layouts.</h1>
         <p class="lede">Map out your floor, see how materials move, and let the planner find an arrangement that saves time and walking.</p>
         <div class="actions">
@@ -240,7 +265,7 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <a class="brand" href="#">
+      <a class="brand" href="/">
         <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#2b59c3"/><rect x="4.5" y="4.5" width="7" height="7" rx="1.5" fill="#fff"/><rect x="12.5" y="12.5" width="7" height="7" rx="1.5" fill="#9fb8f2"/></svg>
         <span>Factory Planner</span>
       </a>
