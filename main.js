@@ -22,6 +22,9 @@
   menu.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !menu.hidden) { setMenu(false); menuBtn.focus(); } });
 
+  // Other pages (privacy, terms) share the header but have no hero or feature animations.
+  if (!document.getElementById("hero-plan")) return;
+
   /* ---------- Hero: draggable layout ---------- */
   // Machine sizes, flows [from, to, weight], and the scattered starting layout (centre points, SVG units).
   var SIZE = [[60, 40], [56, 44], [70, 40], [44, 60], [64, 40], [56, 44]];
