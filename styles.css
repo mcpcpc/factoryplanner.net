@@ -81,8 +81,8 @@ main:focus { outline: none; }
 }
 .header-row { height: 64px; display: flex; align-items: center; gap: 16px; }
 .brand {
-  display: inline-flex; align-items: center; gap: 10px;
-  font-size: 15px; font-weight: 600; letter-spacing: -.01em;
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 14px; font-weight: 600;
   color: var(--ink); white-space: nowrap;
 }
 .brand:hover { text-decoration: none; }
@@ -235,7 +235,7 @@ main:focus { outline: none; }
 }
 .footer-slim .wrap { padding-block: 32px; }
 .footer-slim .foot-bottom { padding-top: 0; border-top: 0; }
-.foot-bottom .brand { font-size: 14px; }
+.foot-bottom .brand { gap: 6px; font-size: 13px; }
 .foot-nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 .foot-nav a { color: var(--muted); }
 .foot-nav a:hover { color: var(--ink); text-decoration: none; }
